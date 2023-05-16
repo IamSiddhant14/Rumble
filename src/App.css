@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+  /* Hide the vertical scroll bar */
+.sidd::-webkit-scrollbar {
+  width: 0.5em;  /* Adjust as needed */
+}
+
+/* Optional: Customize the appearance of the scroll bar track */
+.sidd::-webkit-scrollbar-track {
+  background: transparent;
+}
+
