@@ -28,10 +28,10 @@ const VideoContainer = () => {
   
   return (
     
-    <div className='h-screen flex flex-wrap justify-evenly bg- mt-20'>
+    <div className='h-screen flex flex-wrap justify-evenly'>
     { vid.length > 0 && <HigherOrderComponent ele={vid[47]} />}
     { vid.map((ele) => {
-      // {console.log('Video Container mai hu')}
+    
       return <VideoCard thumb={ele.snippet.thumbnails.medium.url} id={ele.id} key={ele.id}   title={ele.snippet.title} channel={ele.snippet.channelTitle} view ={ele.statistics.viewCount} />
     })
     }

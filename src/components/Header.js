@@ -8,7 +8,6 @@ import { YOUTUBE_SEARCH_API } from '../utils/constants';
 import { useSelector } from 'react-redux';
 import { cacheResults } from '../utils/searchSlice';
 
-
 const Header = () => {
 
     const [val, setVal] = useState('');
@@ -18,8 +17,6 @@ const Header = () => {
 
     const searchCache = useSelector((store) => store.search );
 
-    // const isOpen = useSelector((store) => store.app.isMenuOpen);
-    // console.log(isOpen);
 
     const dispatch = useDispatch();
 
@@ -77,7 +74,7 @@ const Header = () => {
 
         const timer = setTimeout(() => {
 
-            if( searchCache[val]){
+            if( searchCache[val] ){
                 setRes(searchCache[val]);
             }else{
                 call();
@@ -87,16 +84,16 @@ const Header = () => {
         }, 200)
 
         return () => {
-            clearTimeout(timer)
-           
+            clearTimeout(timer);  
         }
 
     }, [val])
 
     return (
 
-        // < div className='top-0 w-full'>
+       
     < div className='fixed top-0 w-full'> 
+
 
             <div className=' bg-white flex  h-14 shadow-lg justify-between '>
 
@@ -104,7 +101,7 @@ const Header = () => {
 
                     <img src={menu} alt="burger" className='h-8 mt-3 mr-6 cursor-pointer ml-3 ' onClick={(e) => toogle()} />
 
-                    <Link className="inline-block"><img src={require('../assets/YouTube-Logo1.png')} alt='ytlogo' className='h-14 cursor-pointer ' /></Link>
+                    <Link className="inline-block"><img  className='h-10 mt-2 cursor-pointer  ' src={require('../assets/RUM-79ca46cb.png')} alt='logo'  /></Link>
 
                 </div>
 
@@ -159,7 +156,8 @@ const Header = () => {
 
             </div>
 
-        </div>
+    </div>
+
     )
 
 }

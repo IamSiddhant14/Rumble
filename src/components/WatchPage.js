@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect} from "react";
 import { closeMenu } from "../utils/appSlice";
 import { useDispatch } from "react-redux";
 import CommentsContainer from "./CommentsContainer";
@@ -8,12 +8,10 @@ import RecommendationVideo from "./RecommendationVideo";
 
 const WatchPage = () => {
 
-    // const [ searchParams] = useSearchParams();
-    // const attr = searchParams.get("v");
-
     const [searchParam] = useSearchParams();
     const attr = searchParam.get('v');
     const dispatch = useDispatch();
+   
 
     useEffect(() => {
 
@@ -27,6 +25,10 @@ const WatchPage = () => {
 
         <div className="flex w-full my-14 ">
 
+{/* <div className={" bg-slate-400 h-60 w-60 font-bold "+ (isDarkTheme && "bg-gray-900" ) }>
+   
+   </div> */}
+
             <div className=" h-full m-1 rounded-2xl w-2/3  flex flex-col ">
 
                 <div className="h-[500px] w-full rounded-2xl border border-black  my-1 overflow-hidden ">
@@ -39,8 +41,11 @@ const WatchPage = () => {
                     <CommentsContainer />
                 </div>
 
+
+
             </div>
 
+            
             <div className=" h-full m-1 rounded-2xl w-1/3 flex flex-col " >
 
                 <div className="h-[500px] w-full my-1 rounded-2xl border border-black">

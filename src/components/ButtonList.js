@@ -15,6 +15,9 @@ const ButtonList = () => {
        <Button val={'Podcast'} />
        <Button val={'All'} />
        <Button val={'Mrbeast'} />
+       <Button val={'CodeDamn'} />
+       <Button val={'Harvad'} />
+       <Button val={'Canada'} />
 
     </div>
   )

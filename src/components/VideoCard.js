@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const VideoCard = ({ thumb, title, channel , id , view }) => {
 
   return (
-    // <Link className="inline-block" to={`https://www.youtube.com/watch?v=${id}`}>
+   
     <Link className="inline-block" to={`/watch?v=${id}`}>
       <div className='h-[268px]  w-60 shadow-2xl rounded-lg p-2 m-2 flex  flex-wrap justify-start'>
         
