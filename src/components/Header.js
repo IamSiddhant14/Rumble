@@ -95,7 +95,8 @@ const Header = () => {
 
     return (
 
-        < div className='fixed top-0 w-full'>
+        // < div className='top-0 w-full'>
+    < div className='fixed top-0 w-full'> 
 
             <div className=' bg-white flex  h-14 shadow-lg justify-between '>
 

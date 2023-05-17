@@ -33,7 +33,7 @@ const Comment = ({ data }) => {
 
         <div className="flex shadow-sm bg-gray-300 p-2 rounded-lg my-2">
             <img
-                className="w-12 h-12" alt="user" src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png" />
+                className="w-6 h-6 rounded-full" alt="user" src="https://source.unsplash.com/featured" />
 
             <div className="px-3">
                 <p className="font-bold">{name}</p>
@@ -49,8 +49,8 @@ const CommentsList = ({ comments }) => {
 
     return (
         comments.map((comment, id) => (
-            <div className=" border border-l-black">
-                <Comment key={id} data={comment} />
+            <div key={id} className=" border border-l-black">
+                <Comment  data={comment} />
                 <div className="pl-5 border-l-black ml-5">
                   <CommentsList key={id+9234234} comments={comment.replies}/>
                 </div>
@@ -63,7 +63,7 @@ const CommentsList = ({ comments }) => {
 
 const CommentsContainer = () => {
     return (
-        <div className=" mt-[-430px] p-2 ">
+        <div className=" p-2 ">
             <h1 className="text-2xl font-bold">Comments :</h1>
             <CommentsList comments={CommentData} />
         </div>

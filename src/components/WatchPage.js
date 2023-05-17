@@ -1,54 +1,64 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
-import { Dispatch } from "react";
 import { closeMenu } from "../utils/appSlice";
 import { useDispatch } from "react-redux";
 import CommentsContainer from "./CommentsContainer";
+import LiveChat from "./LiveChat";
+import RecommendationVideo from "./RecommendationVideo";
 
 const WatchPage = () => {
 
     // const [ searchParams] = useSearchParams();
     // const attr = searchParams.get("v");
 
-   const [ searchParam ] = useSearchParams();
-   const attr = searchParam.get('v');
+    const [searchParam] = useSearchParams();
+    const attr = searchParam.get('v');
     const dispatch = useDispatch();
-   
+
     useEffect(() => {
 
         dispatch(closeMenu());
 
 
-    } , [] );
+    }, []);
 
 
     return (
 
-        <div className="grid h-full grid-flow-col mt-14">
+        <div className="flex w-full my-14 ">
 
-            <div className=" h-full col-span-8 ">
-                
-                <div className="h-2/3">
+            <div className=" h-full m-1 rounded-2xl w-2/3  flex flex-col ">
 
-                <iframe width="853" height="480" src={"https://www.youtube.com/embed/" + attr} allow="autoplay ;accelerometer " allowFullScreen></iframe>
-                
+                <div className="h-[500px] w-full rounded-2xl border border-black  my-1 overflow-hidden ">
+
+                    <iframe className="relative  h-full overflow-hidden w-full " src={"https://www.youtube.com/embed/" + attr} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
                 </div>
 
-                <div className="h-1/3 mt-[40px] p-2 ">
-                     <CommentsContainer/>
+                <div className=" overflow-scroll sidd rounded-2xl w-full border border-black ">
+                    <CommentsContainer />
                 </div>
 
             </div>
 
-            <div className=" h-full col-span-4" >
+            <div className=" h-full m-1 rounded-2xl w-1/3 flex flex-col " >
+
+                <div className="h-[500px] w-full my-1 rounded-2xl border border-black">
+                    <LiveChat />
+                </div>
+
+                <div className=" w-full flex justify-center rounded-2xl border border-black">
+
+                    <RecommendationVideo/>
+
+                </div>
 
 
             </div>
 
         </div>
 
-
     )
 }
 
-export default WatchPage ;
+export default WatchPage;

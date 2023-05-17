@@ -13,7 +13,7 @@ const SideBar = () => {
 
   return (
 
-    <div className='sidd overflow-y-scroll w-[275px] bg-white shadow-2xl text-xl mt-14 p-4 fixed h-full '>
+    <div className='sidd overflow-y-scroll z-10  w-[275px] bg-white shadow-2xl text-xl mt-14 p-4 fixed h-full '>
       {categories.map((category , i) => (
 
 

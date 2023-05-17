@@ -14,12 +14,15 @@ import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
 const GOOGLE_API_KEY = "AIzaSyC6kHjMyXPylbJdRXuRB6AWmzwZqyTmNNw"
 
+export const RELATED_VIDEO_ID = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&maxResults=20&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&key=" + GOOGLE_API_KEY ;
+
 export const YOUTUBE_VIDEO_API = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&key="+ GOOGLE_API_KEY  ;
 
 export const YOUTUBE_SEARCH_API = "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=" ;
 
 export const YOUTUBE_VIDEO_FOR_SEARCH_TERM = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q={query}&type=video&maxResults=50&key=' + GOOGLE_API_KEY ;
 
+export const CHAT_OOFSET = 25 ;
 
 
 export const categories = [
@@ -38,3 +41,4 @@ export const categories = [
     { name: 'Gym', icon: <FitnessCenterIcon />, },
     { name: 'Crypto', icon: <DeveloperModeIcon />, },
   ];
+
