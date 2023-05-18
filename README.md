@@ -2,6 +2,7 @@
 
 ![image](https://github.com/IamSiddhant14/Rumble/assets/53156374/71e1869e-11b2-473d-aab6-cf682a9a20be)
 ![image](https://github.com/IamSiddhant14/Rumble/assets/53156374/835f9c5f-40eb-4117-ba16-327c8f736581)
+![image](https://github.com/IamSiddhant14/Rumble/assets/53156374/d44b6a13-b816-4cf3-b630-d6762b31369a)
 
 
 This project is a clone of YouTube, built using React. It aims to replicate some of the core features and functionalities of the popular video-sharing platform.
