@@ -1,15 +1,16 @@
 # YouTube Clone
 
+![image](https://github.com/IamSiddhant14/Rumble/assets/53156374/71e1869e-11b2-473d-aab6-cf682a9a20be)
+![image](https://github.com/IamSiddhant14/Rumble/assets/53156374/835f9c5f-40eb-4117-ba16-327c8f736581)
+
+
 This project is a clone of YouTube, built using React. It aims to replicate some of the core features and functionalities of the popular video-sharing platform.
 
 ## Features
 
-- User authentication: Users can sign up, log in, and log out of the application.
+- The search is been optimized using debouncing and memoization also the user could search for his/her desired video's
 - Video browsing: Users can browse through a collection of videos, search for specific videos, and view video details.
 - Video playback: Users can play videos and control playback using standard video controls (play, pause, seek, volume).
-- User interactions: Users can like, dislike, and comment on videos. They can also subscribe to channels and receive notifications for new video uploads.
-- Recommendations: The application provides personalized video recommendations based on the user's viewing history and preferences.
-- User profiles: Users have their own profiles, where they can manage their uploaded videos, playlists, and subscriptions.
 - Responsive design: The application is designed to work well on different screen sizes and devices.
 
 ## Technologies Used
@@ -17,10 +18,10 @@ This project is a clone of YouTube, built using React. It aims to replicate some
 - **React**: JavaScript library for building user interfaces.
 - **Redux**: State management library for managing application state.
 - **React Router**: Library for routing and navigation within the React application.
-- **Firebase**: Backend-as-a-Service (BaaS) platform for user authentication, database storage, and hosting.
 - **YouTube Data API**: API provided by YouTube for retrieving video information and data.
 - **HTML5** and **CSS3**: Markup and styling languages for building web pages.
 - **JavaScript**: Programming language used for implementing application logic and interactivity.
+- It also uses various other Hooks like usePararms() , useParamsSearch()
 
 ## Getting Started
 
@@ -29,20 +30,8 @@ To run the project locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/your-username/youtube-clone.git`
 2. Navigate to the project directory: `cd youtube-clone`
 3. Install the dependencies: `npm install`
-4. Set up Firebase:
-   - Create a Firebase project and enable the Authentication and Firestore services.
-   - Obtain your Firebase configuration values.
-   - Create a `.env` file in the project root and add your Firebase configuration as environment variables. For example:
-     ```
-     REACT_APP_API_KEY=your-api-key
-     REACT_APP_AUTH_DOMAIN=your-auth-domain
-     REACT_APP_PROJECT_ID=your-project-id
-     REACT_APP_STORAGE_BUCKET=your-storage-bucket
-     REACT_APP_MESSAGING_SENDER_ID=your-sender-id
-     REACT_APP_APP_ID=your-app-id
-     ```
-5. Start the development server: `npm start`
-6. Open your browser and navigate to `http://localhost:3000` to see the application.
+4. Start the development server: `npm start`
+5. Open your browser and navigate to `http://localhost:3000` to see the application.
 
 ## Contributing
 
