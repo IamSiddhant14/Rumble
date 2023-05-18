@@ -13,6 +13,8 @@ This project is a clone of YouTube, built using React. It aims to replicate some
 - Video browsing: Users can browse through a collection of videos, search for specific videos, and view video details.
 - Video playback: Users can play videos and control playback using standard video controls (play, pause, seek, volume).
 - Responsive design: The application is designed to work well on different screen sizes and devices.
+- Live Shat implemeted using Api Pooling
+- Comment section uses recursion to show nested comments
 
 ## Technologies Used
 
